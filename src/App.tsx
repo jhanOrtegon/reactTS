@@ -1,8 +1,12 @@
 import HeaderV from './components/Header'
+import SearchV from './components/Search/index';
 
 function App() {
   return (
-    <HeaderV />
+    <div className='container p-4'>
+      <HeaderV />
+      <SearchV />
+    </div>
   );
 }
 
