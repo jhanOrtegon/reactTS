@@ -2,7 +2,8 @@ import React, { ReactElement } from 'react'
 import { Grid } from './styled'
 import { TSearchC } from './types'
 const SearchC: React.FC<TSearchC> = ({
-    handleSubmit
+    handleSubmit,
+    handleChange,
 }): ReactElement => {
     return (
         <form
@@ -16,6 +17,7 @@ const SearchC: React.FC<TSearchC> = ({
                     className='form-control'
                     placeholder='Ejemplo: Naruto'
                     name='inputSearch'
+                    onChange={handleChange}
                 />
 
                 <input className='form-control bg-dark text-white' type="submit" value='Search' />

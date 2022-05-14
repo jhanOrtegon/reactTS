@@ -4,5 +4,6 @@ export type TGifC = {
         images?: string
         username?: string
         title?: string
-    }[]
+    }[],
+    formState: any
 }
