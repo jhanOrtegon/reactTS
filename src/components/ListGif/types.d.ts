@@ -1,7 +1,7 @@
 export type TGifC = {
     data?: {
         id?: string
-        embed_url?: string
+        images?: string
         username?: string
         title?: string
     }[]

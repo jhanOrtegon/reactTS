@@ -2,9 +2,9 @@ import React, { ReactElement } from 'react'
 import GifC from './component'
 import { TGifV } from './types'
 
-const GifV: React.FC<TGifV> = ({ embed_url, username, title }): ReactElement => {
+const GifV: React.FC<TGifV> = ({ images, username, title }): ReactElement => {
     return (
-        <GifC embed_url={embed_url} username={username} title={title} />
+        <GifC images={images} username={username} title={title} />
     )
 }
 

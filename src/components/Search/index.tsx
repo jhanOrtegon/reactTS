@@ -1,12 +1,10 @@
 import React, { ReactElement } from 'react'
 import SearchC from './component'
-import ListGifV from './../ListGif/index';
 
 const SearchV: React.FC = (): ReactElement => {
 
-    const handleSubmit = (event: React.FormEvent<HTMLElement>) => {
+    const handleSubmit = (event: React.FormEvent<HTMLElement>): void => {
         event.preventDefault()
-        ListGifV()
     }
 
     return (
